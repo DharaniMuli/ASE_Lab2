@@ -1,4 +1,4 @@
-.tempstyle{
+.boxstyle{
 
   border-radius: 25px;
   /*width: 200px;*/
@@ -34,6 +34,11 @@ hr {
 .windborder{
   border-top: 0;
 }
-.weekweather{
+.textcolor{
   color: white ;
+}
+@media (width: 420px) between (width: 630px){
+  .textSizeAdjust{
+    text-size: 9px;
+  }
 }
