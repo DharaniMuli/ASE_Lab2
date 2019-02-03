@@ -1,3 +1,8 @@
 .textcolor {
   color: white;
 }
+canvas{
+
+  height:300px !important;
+
+}

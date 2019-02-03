@@ -55,7 +55,7 @@ export class HomeComponent implements OnInit {
   generateHourlyReport= (data) =>{
     data = data['hourly_forecast'];
     let obj=null;
-    for(let i = 0 ; i< 10 ; i++)
+    for(let i = 0 ; i< 10 && data ; i++)
     {
       obj = {
         temperature: data[i]['temp']['english'],
@@ -79,7 +79,6 @@ export class HomeComponent implements OnInit {
       this.chart = new Chart('canvas', {
         type: 'line',
         responsive:'true',
-        maintainAspectRatio: false,
         scaleFontColor: 'red',
         data: {
         labels: this.timeArray,
