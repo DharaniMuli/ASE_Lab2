@@ -1,0 +1,35 @@
+
+<div class="row">
+
+  <div class="offset-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-4 tempstyle">
+    <label class="display-5"><h5>{{location.city}} Weather Report</h5></label>
+    <hr>
+    <img [src]="current_report.current_observation.icon_url" class="img-rounded" alt="Cinque Terre" height="70" width="70"/>
+    <label class="mt-2 weekweather"><h4>{{current_report.current_observation.local_time_rfc822.substring(0,3)}}, {{current_report.current_observation.weather}}</h4></label>
+
+    <label class="weekweather">
+      <h1>{{current_report.current_observation.temp_f }} &#8457; |  {{current_report.current_observation.temp_c }} &#8451; </h1>
+    </label>
+    <label class="weekweather">
+      <h4>Feels Like {{current_report.current_observation.feelslike_f }} &#8457;  {{current_report.current_observation.feelslike_c }} &#8451; </h4>
+    </label>
+  </div>
+  <div class=" offset-1 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-4 tempstyle">
+    <label class="display-5"><h5>Forecast Report</h5></label>
+    <hr>
+    <ul class="list-group">
+      <li class="windborder list-group-item d-flex justify-content-between align-items-center">
+        <h6>WIND SPEED(mph)</h6>
+        <span class="badge badge-primary badge-pill">{{current_report.current_observation.wind_mph}}</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <h6> PRESSURE (mb)</h6>
+        <span class="badge badge-primary badge-pill">{{current_report.current_observation.pressure_mb}}</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <h6> HUMIDITY</h6>
+        <span class="badge badge-primary badge-pill">{{current_report.current_observation.relative_humidity}}</span>
+      </li>
+    </ul>
+  </div>
+</div>

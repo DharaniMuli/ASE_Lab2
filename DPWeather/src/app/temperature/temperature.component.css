@@ -1,0 +1,39 @@
+.tempstyle{
+
+  border-radius: 25px;
+  /*width: 200px;*/
+  height: 250px;
+  opacity: 5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E2E2E2, #c9d6ff0d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-box-shadow: -3px 3px 21px 0px rgba(105,94,105,0.78);
+  -moz-box-shadow: -3px 3px 21px 0px rgba(105,94,105,0.78);
+  box-shadow: -3px 3px 21px 0px rgba(105,94,105,0.78);
+}
+hr {
+  display: block;
+  margin-top:0.2em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+.list-group-item{
+  color: white ;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+.display-5{
+  color: white ;
+  margin-top: .9rem;
+}
+.windborder{
+  border-top: 0;
+}
+.weekweather{
+  color: white ;
+}
