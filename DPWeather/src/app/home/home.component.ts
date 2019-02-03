@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
 
     this.createLocationObject();
     this.getDataFromService();
-    this.removeData(this.chart);
+    this.removeData();
     this.getHourlyDataFromService();
 
   }
@@ -68,7 +68,6 @@ export class HomeComponent implements OnInit {
 
   }
   generateChartArrays =(data) =>{
-
       for(let prop in data)
       {
         this.temperatureArray.push(data[prop]['temperature']);
@@ -80,6 +79,7 @@ export class HomeComponent implements OnInit {
       this.chart = new Chart('canvas', {
         type: 'line',
         responsive:'true',
+        maintainAspectRatio: false,
         scaleFontColor: 'red',
         data: {
         labels: this.timeArray,
@@ -112,13 +112,12 @@ export class HomeComponent implements OnInit {
         }
       }
     });
+
   }
-  removeData=(chart)=> {
-    chart.data.labels.pop();
-    chart.data.datasets.forEach((dataset) => {
-      dataset.data.pop();
-    });
-    chart.update();
+  removeData=()=> {
+    this.hourly_report=[];
+    this.temperatureArray=[];
+    this.timeArray=[];
   }
 
 }
