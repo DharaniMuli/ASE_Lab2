@@ -22,7 +22,7 @@
      </form>
 
 <!--Code for displaying of weather report and forecast report is written in "temperature component" but then reference is given here-->
-<app-temperature *ngIf="current_report" [current_report] = "current_report" [location]= "location"></app-temperature>
+<app-temperature *ngIf="current_report && current_report.current_observation" [current_report] = "current_report" [location]= "location"></app-temperature>
 
 <!--This code helps us to display Hourly forecast graph-->
 
