@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71e0a7a-2c08-4083-ab78-8320fe0fe93a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DPWeather/src/app/temperature/temperature.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/DPWeather/src/app/temperature/temperature.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DPWeather/src/app/home/home.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="119">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding>
                 <element signature="n#form#0;n#!!top" />
               </folding>
@@ -69,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DPWeather/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DPWeather/src/app/temperature/temperature.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <caret line="5" column="134" selection-start-line="5" selection-start-column="134" selection-end-line="5" selection-end-column="134" />
+            <state relative-caret-position="65">
+              <caret line="5" column="125" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -120,10 +120,10 @@
         <option value="$PROJECT_DIR$/DPWeather/src/app/home/home.component.ts" />
         <option value="$PROJECT_DIR$/DPWeather/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/DPWeather/src/app/home/home.component.css" />
-        <option value="$PROJECT_DIR$/DPWeather/src/app/home/home.component.html" />
-        <option value="$PROJECT_DIR$/DPWeather/src/app/temperature/temperature.component.html" />
         <option value="$PROJECT_DIR$/DPWeather/src/index.html" />
         <option value="$PROJECT_DIR$/DPWeather/src/styles.css" />
+        <option value="$PROJECT_DIR$/DPWeather/src/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/DPWeather/src/app/temperature/temperature.component.html" />
       </list>
     </option>
   </component>
@@ -220,12 +220,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549168965136</updated>
       <workItem from="1549168967514" duration="1015000" />
-      <workItem from="1549219554948" duration="27714000" />
+      <workItem from="1549219554948" duration="28044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28729000" />
+    <option name="totallyTimeSpent" value="29059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -335,10 +335,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPWeather/src/app/temperature/temperature.component.html">
+    <entry file="file://$PROJECT_DIR$/DPWeather/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="5" column="134" selection-start-line="5" selection-start-column="134" selection-end-line="5" selection-end-column="134" />
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DPWeather/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -351,25 +358,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DPWeather/src/app/home/home.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="119">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
             <element signature="n#form#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DPWeather/src/index.html">
+    <entry file="file://$PROJECT_DIR$/DPWeather/src/app/temperature/temperature.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DPWeather/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="24" />
+        <state relative-caret-position="65">
+          <caret line="5" column="125" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
         </state>
       </provider>
     </entry>
