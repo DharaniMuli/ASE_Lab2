@@ -50,6 +50,10 @@ hr {
 .windborder{
   border-top: 0;
 }
+.bordercolor
+{
+  border-color: #88b0e7;
+}
 .textcolor{
   color: white ;
 }

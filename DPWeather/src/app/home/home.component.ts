@@ -105,7 +105,10 @@ export class HomeComponent implements OnInit {
           yAxes: [{
             display: true,
             ticks: {
-              fontColor: "white"
+              fontColor: "white",
+              callback: function(value, index, values) {
+                return  value + ' F';
+              }
             }
           }],
         }
