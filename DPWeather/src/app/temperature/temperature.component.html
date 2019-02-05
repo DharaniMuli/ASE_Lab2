@@ -1,46 +1,59 @@
 <!--This is Second and last component created for the project-->
-
-<div class="container offset-1 offset-xl-1 offset-lg-1 offset-md-0 offset-sm-1">
-  <div class="row">
-    <!--Weather Report-->
-    <div class="offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 offset-xs-0 col-xl-5 col-lg-6 col-md-10 col-sm-10 col-12 mt-4">
-       <label class="display-5">
-         <h4>{{location.city}}, {{location.state}}</h4>
-       </label>
-       <label class="pl-3 row mt-2 textSizeAdjust textcolor">
-        <h5>{{current_report.current_observation.local_time_rfc822.substring(0,25)}}</h5>
-       </label>
-      <hr>
-      <label class="textSizeAdjust textcolor">
-        <img [src]="current_report.current_observation.icon_url" class="img-rounded" alt="Cinque Terre" height="70" width="70"/>
-        <h5 class="pl-2">{{current_report.current_observation.weather}}</h5>
-      </label>
-      <label class="textcolor pl-3">
-        <h1>{{current_report.current_observation.temp_f }} &#8457; |  {{current_report.current_observation.temp_c }} &#8451;</h1>
-        <h6>Feels Like {{current_report.current_observation.feelslike_f }} &#8457;{{current_report.current_observation.feelslike_c }} &#8451; </h6>
-      </label>
+<div class="row mt-4">
+  <!--Weather Report-->
+  <div class="boxstyle">
+    <div style="font-size: 1.5rem;">{{location.city}}, {{location.state}}</div>
+    <div>{{current_report.current_observation.local_time_rfc822.substring(0,25)}}</div>
+    <div>
+      <div style="float: left; width: 50%">
+        <img [src]="current_report.current_observation.icon_url" class="img-rounded" alt="Cloudy" height="80"/> <br>
+        <span>{{current_report.current_observation.weather}}</span>
+      </div>
+      <div style="float: left; width: 50%">
+        <span style="font-size:3.2rem;">  {{current_report.current_observation.temp_f }}<span style="vertical-align: super;font-size: medium;">&#8457;</span></span>
+         <!--<span>{{current_report.current_observation.temp_c }} &#8451;</span>-->
+      </div>
     </div>
-    <!--Forecast Report-->
-    <div class=" offset-xl-1 offset-lg-1 offset-md-2 offset-sm-1 offset-xs-0 col-xl-4 col-lg-4 col-md-9 col-sm-9  col-10 mt-4 boxstyle">
-      <label class="display-5">
-        <h5>Forecast Report</h5>
-      </label>
-      <hr>
-         <ul class="list-group">
-            <li class="windborder list-group-item d-flex justify-content-between align-items-center">
-              <h6>WIND SPEED(mph)</h6>
-              <span class="badge badge-primary badge-pill">{{current_report.current_observation.wind_mph}}</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <h6> PRESSURE (mb)</h6>
-              <span class="badge badge-primary badge-pill">{{current_report.current_observation.pressure_mb}}</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <h6> HUMIDITY</h6>
-              <span class="badge badge-primary badge-pill">{{current_report.current_observation.relative_humidity}}</span>
-            </li>
-         </ul>
+    <div style="clear: both; padding-top: 0.5rem;">
+      Feels Like <span>{{current_report.current_observation.feelslike_f }}<span>&#8457;</span> </span>
     </div>
-
   </div>
+  <!--Forecast Report-->
+  <div class="boxstyle" style="margin-left:4%">
+    <label class="display-5">
+      <h5>Forecast Report</h5>
+    </label>
+    <hr>
+    <ul class="list-group">
+      <li class="windborder list-group-item d-flex justify-content-between align-items-center">
+        <h6>WIND SPEED(mph)</h6>
+        <span class="badge badge-primary badge-pill">{{current_report.current_observation.wind_mph}}</span>
+      </li>
+      <li class=" textcolor list-group-item d-flex justify-content-between align-items-center">
+        <h6> PRESSURE (mb)</h6>
+        <span class="badge badge-primary badge-pill">{{current_report.current_observation.pressure_mb}}</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <h6> HUMIDITY</h6>
+        <span class="badge badge-primary badge-pill">{{current_report.current_observation.relative_humidity}}</span>
+      </li>
+    </ul>
+  </div>
+  <!--Hourly Report Chart-->
+  <div class="boxstyle" style="margin-left:4%;width: 40%;">
+    <div style="font-size: 1.5rem;">Hourly Forecast</div>
+    <div class="">
+      <div *ngIf="chart">
+        <canvas id="canvas">{{chart}}</canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+   <div *ngFor="let eachReport of hourly_report| slice:5:hourly_report.length" class="hourlybox">
+     {{eachReport.temperature}} &#8457;<br>
+     <img [src]="eachReport.image"/><br> {{eachReport.condition}}<br>
+     {{eachReport.time}}
+   </div>
 </div>
